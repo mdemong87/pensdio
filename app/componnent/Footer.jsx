@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="py-20">
                     <div>
                         <div className="mb-5">
-                            <p className="text-xl text-gray-500">We're here to solve your problem!</p>
+                            <p className="text-xl text-gray-500">We&apos;re here to solve your problem!</p>
                             <h1 className="text-3xl md:text-5xl py-4 font-light sFont text-gray-600">pensdio21@gmail.com</h1>
                         </div>
                         <div className="flex flex-col md:flex-row justify-between items-cetner gap-5 py-5">

@@ -8,7 +8,7 @@ const ClientExperiences = () => {
             <Container>
                 <div className="h-full flex justify-between ">
                     <div className="h-full">
-                        <h1 className="text-4xl md:text-5xl font-bold sFont text-gray-700">Our Client's</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold sFont text-gray-700">Our Client&apos;s</h1>
                         <h1 className="text-4xl md:text-5xl font-bold pt-4 sFont text-gray-700">Experiences</h1>
                     </div>
                     <div className="mt-10">

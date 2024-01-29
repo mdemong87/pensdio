@@ -16,7 +16,7 @@ const AboutLetsMeet = () => {
         <div className="py-20 sBg">
             <Container>
                 <div className="h-full">
-                    <h1 className="text-4xl md:text-5xl font-bold sFont text-gray-700">Let's Meet With Our</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold sFont text-gray-700">Let&apos;s Meet With Our</h1>
                     <h1 className="text-4xl md:text-5xl font-bold pt-4 sFont text-gray-700">Dedicated Team</h1>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center md:items-start justify-between md:gap-5">
