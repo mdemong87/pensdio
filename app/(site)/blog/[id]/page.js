@@ -20,15 +20,15 @@ const SingleBlog = () => {
                         </div>
                         <div className="pt-8 flex flex-col gap-5 text-lg">
                             <p>
-                                UI (User Interface) and UX (User Experience) design are pivotal pillars in crafting exceptional digital experiences that resonate with users, foster engagement, command authority, instil trust, and remain relevant. 🌟🎨📱
+                                UI (User Interface) and UX (User Experience) design are pivotal pillars in crafting exceptional digital experiences that resonate with users, foster engagement, command authority, instil trust, and remain relevant.
                             </p>
 
                             <p>
-                                UI Design: UI design centres on websites or applications' visual elements and interactive components.Its primary goal is to fashion visually captivating, intuitive, and coherent interfaces. For instance, consider the sleek and minimalist layout of Apple's iPhone interface or the user-friendly, streamlined structure of Airbnb's booking platform. 🎨📝
+                                UI Design: UI design centres on websites or applications visual elements and interactive components.Its primary goal is to fashion visually captivating, intuitive, and coherent interfaces. For instance, consider the sleek and minimalist layout of Apple's iPhone interface or the user-friendly, streamlined structure of Airbnbs booking platform.
                             </p>
 
                             <p>
-                                UX Design: Conversely, UX design is dedicated to refining the user journey when engaging with a product or service.This encompasses understanding user behaviour, conducting thorough research, and designing user flow to guarantee a seamless and gratifying encounter. A shining example of exemplary UX design resides in Google's search engine, a platform that efficiently delivers pertinent results, guiding users through their quest for information. 🧠🔍🌐
+                                UX Design: Conversely, UX design is dedicated to refining the user journey when engaging with a product or service.This encompasses understanding user behaviour, conducting thorough research, and designing user flow to guarantee a seamless and gratifying encounter. A shining example of exemplary UX design resides in Googles search engine, a platform that efficiently delivers pertinent results, guiding users through their quest for information.
                             </p>
 
                             <p>
@@ -41,7 +41,7 @@ const SingleBlog = () => {
 
 
                             <p>
-                                A striking model of this synergy is LinkedIn, where the professional and polished UI and UX design empower users to network and showcase their expertise with unwavering assurance. 🤝💼✨
+                                A striking model of this synergy is LinkedIn, where the professional and polished UI and UX design empower users to network and showcase their expertise with unwavering assurance.
                             </p>
 
                             <p>
