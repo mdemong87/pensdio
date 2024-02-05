@@ -24,7 +24,7 @@ const SingleBlog = () => {
                             </p>
 
                             <p>
-                                UI Design: UI design centres on websites or applications visual elements and interactive components.Its primary goal is to fashion visually captivating, intuitive, and coherent interfaces. For instance, consider the sleek and minimalist layout of Apple's iPhone interface or the user-friendly, streamlined structure of Airbnbs booking platform.
+                                UI Design: UI design centres on websites or applications visual elements and interactive components.Its primary goal is to fashion visually captivating, intuitive, and coherent interfaces. For instance, consider the sleek and minimalist layout of Apples iPhone interface or the userfriendly, streamlined structure of Airbnbs booking platform.
                             </p>
 
                             <p>
