@@ -38,6 +38,15 @@ body {
   background: rgba(219, 219, 219, 0.644);
 }
 
+
+
+
+/* not found componnent css here */
+.not-found-componnent {
+  text-align: center;
+  background: var(--primaryColor);
+}
+
 @media (min-width:768px) {
   .Containers {
     width: 75%;

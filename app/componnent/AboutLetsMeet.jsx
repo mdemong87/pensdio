@@ -9,7 +9,7 @@ import LetsMeetSectionWrper from "./LetsMeetsSectionWrper";
 const AboutLetsMeet = () => {
 
 
-    const [counter, setcounter] = useState(1);
+    const [counter, setcounter] = useState(0);
 
 
     return (
@@ -22,29 +22,29 @@ const AboutLetsMeet = () => {
                 <div className="flex flex-col lg:flex-row items-center md:items-start justify-between md:gap-5">
                     <div className="w-full">
                         <ul className="mt-12">
-                            <li onClick={() => { setcounter(1) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 1 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
+                            <li onClick={() => { setcounter(0) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 0 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.01/</span>
                                 <h2 className="text-2xl md:text-3xl">Software engineer</h2>
                             </li>
-                            <li onClick={() => { setcounter(2) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 2 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
+                            <li onClick={() => { setcounter(1) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 1 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.02/</span>
                                 <h2 className="text-2xl md:text-3xl">Brand strategy director</h2>
                             </li>
-                            <li onClick={() => { setcounter(3) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 3 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
+                            <li onClick={() => { setcounter(2) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 2 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.03/</span>
                                 <h3 className="text-2xl md:text-3xl">Digital social marketer</h3>
                             </li>
-                            <li onClick={() => { setcounter(4) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 4 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
+                            <li onClick={() => { setcounter(3) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 3 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.04/</span>
                                 <h3 className="text-2xl md:text-3xl">
                                     Graphic designer
                                 </h3>
                             </li>
-                            <li onClick={() => { setcounter(5) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 5 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
+                            <li onClick={() => { setcounter(4) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 4 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.05/</span>
                                 <h3 className="text-2xl md:text-3xl">Motion designer</h3>
                             </li>
-                            <li onClick={() => { setcounter(6) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 6 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
+                            <li onClick={() => { setcounter(5) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 5 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.06/</span>
                                 <h3 className="text-2xl md:text-3xl">
                                     UX/UI (Product designer)
@@ -53,7 +53,7 @@ const AboutLetsMeet = () => {
                         </ul>
                     </div>
 
-                    <LetsMeetSectionWrper />
+                    <LetsMeetSectionWrper counter={counter} />
                 </div>
             </Container>
         </div>

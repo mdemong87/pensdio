@@ -1,6 +1,13 @@
 import Container from "@/app/componnent/Container";
 import Link from "next/link";
-import homelatestTwo from "../../../public/homelatesttwo.png";
+import workone from "../../../public/images/Home/workone.png";
+import worktwo from "../../../public/images/Home/worktwo.png";
+import workeight from "../../../public/images/Works/workeight.png";
+import workfive from "../../../public/images/Works/workfive.png";
+import workfour from "../../../public/images/Works/workfour.png";
+import workseven from "../../../public/images/Works/workseven.png";
+import worksix from "../../../public/images/Works/worksix.png";
+import workthree from "../../../public/images/Works/workthree.png";
 import HomeLatestWork from "../../componnent/HomeLatestWorkCard";
 
 const Work = () => {
@@ -12,15 +19,26 @@ const Work = () => {
                     <h1 className="text-4xl md:text-5xl font-bold pt-4 sFont text-gray-700">Achievements</h1>
                 </div>
                 <div className="grid flex-col md:grid-cols-2 gap-8 mt-10">
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
-                    <HomeLatestWork iamgeSrc={homelatestTwo} />
+
+                    <HomeLatestWork iamgeSrc={workone} topheadLeft={"Brand Identity"} topheadRight={"KANGARI STONES"} head={"Brand identity & Social media for Kangari"} dis={"Kangari Stones is a renounced tile company in USA"} />
+                    <HomeLatestWork iamgeSrc={worktwo} topheadLeft={"Case Study"} topheadRight={"DOCTRA APP"} head={"Doctra app Case Study"} dis={"Doctra is a health app where you can book doctors appointments"} />
+
+                    <HomeLatestWork iamgeSrc={workthree} topheadLeft={"Case Study"} topheadRight={"50 CLASSICAL HOMEOPATHY TREATMENT"} head={"Homeopathy Treatment Case Study"} dis={"Utilize the homeopathy app to create a treatment plan"} />
+
+
+                    <HomeLatestWork iamgeSrc={workfour} topheadLeft={"Identity Design"} topheadRight={"AJA FIT"} head={"Brand Identity design for Aja Fit"} dis={"Aja Fit is a tech business working to improve global health"} />
+
+
+                    <HomeLatestWork iamgeSrc={worksix} topheadLeft={"Identity Design"} topheadRight={"SUBRA SYSTEM"} head={"Brand identity & Website for Subra System"} dis={"Subra System is a specialist provider of software solution"} />
+
+
+                    <HomeLatestWork iamgeSrc={workeight} topheadLeft={"UX & UI Design"} topheadRight={"APPTO"} head={"App Landing page Digital E-Wallet Company"} dis={"Appto is a easy fast & secure digital e-wallet"} />
+
+
+                    <HomeLatestWork iamgeSrc={workfive} topheadLeft={"Event Branding"} topheadRight={"BIT SUMMIT"} head={"International Event BIT Summit 2021"} dis={"Interventional Cardiologists for the Improvement Summit"} />
+
+
+                    <HomeLatestWork iamgeSrc={workseven} topheadLeft={"UX & UI Design"} topheadRight={"EDUCARE"} head={"Education Dashboard UX & UI Design"} dis={"Educare is a leading educational technology SaaS solution"} />
 
                 </div>
                 <div className="mt-10">

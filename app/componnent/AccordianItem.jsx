@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import { useState } from "react";
 import { FaLongArrowAltDown, FaLongArrowAltUp } from "react-icons/fa";
 
@@ -26,7 +27,7 @@ const AccordianItem = ({ heading, num, dis, disTwo }) => {
             <div className={`${isshow ? "block" : "hidden"}`}>
                 <div className="p-5 border border-b-0 border-gray-200">
                     <p className="mb-2 text-lg text-gray-500">{dis}</p>
-                    <p className="pt-4 text-lg text-gray-500 flex items-center flex-wrap gap-x-6 gap-y-2">
+                    <p className="pt-4 text-lg text-gray-500 flex items-center flex-wrap gap-x-6 gap-y-2 mb-6">
                         {
                             disTwo?.map((item, index) => {
                                 return (
@@ -40,6 +41,7 @@ const AccordianItem = ({ heading, num, dis, disTwo }) => {
                             })
                         }
                     </p>
+                    <Link href={"/contact"} className="pBg text-lg sCl px-4 py-2 rounded-md ">Discuss your plan</Link>
                 </div>
             </div>
         </div>

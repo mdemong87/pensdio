@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { FaPlay, FaStar } from "react-icons/fa";
-import VedioReviewImage from "../../public/VedioReviewImage.png";
 
-const VedioReviewCard = () => {
+const VedioReviewCard = ({ VedioReviewImage, point, name, position }) => {
     return (
         <div className="bg-white w-full rounded-sm">
             <div className="relative w-full">
@@ -16,14 +15,14 @@ const VedioReviewCard = () => {
             <div className="p-4">
                 <div className="flex gap-2 items-center">
                     <div className="flex items-center">
-                        <span className="text-gray-700 text-2xl">5/</span>
+                        <span className="text-gray-700 text-2xl">{point}/</span>
                         <span className="text-gray-400 text-lg">5</span>
                     </div>
                     <FaStar className="text-2xl text-yellow-500" />
                 </div>
                 <div className="mt-3">
-                    <h2 className="text-gray-500 text-xl font-semibold">Laura Walker</h2>
-                    <span className="text-gray-400 text-md">CEO of Altech</span>
+                    <h2 className="text-gray-500 text-xl font-semibold">{name}</h2>
+                    <span className="text-gray-400 text-md">{position}</span>
                 </div>
             </div>
         </div>

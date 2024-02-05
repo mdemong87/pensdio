@@ -24,7 +24,7 @@ const HeroSlider = () => {
                 <div className="h-full w-full flex flex-col">
                     <div className="h-full flex flex-col md:flex-row md:items-center pt-32 md:pt-16">
                         <div className="w-full">
-                            <h1 className="text-center md:text-left text-4xl md:text-6xl text-white font-bold sFont">Make Brands That Are Human-Centered And Compelling.</h1>
+                            <h1 className="text-center md:text-left text-4xl md:text-6xl text-white font-bold sFont tracking-wider">Make Brands That Are Human-Centered And Compelling.</h1>
 
                             <div className="mt-16 flex flex-col md:flex-row items-center  md:px-0">
                                 <div className="w-full md:w-fit flex justify-center md:justify-start md:border-r-2 md:pr-4 border-white">

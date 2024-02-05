@@ -1,8 +1,15 @@
 import Container from "@/app/componnent/Container";
 import Image from "next/image";
-import blogMotion from "../../../public/blogMotion.png";
+import blogMotion from "../../../public/images/Blog/Blog Mid 04.png";
 import motionProfileblog from "../../../public/motionProfileblog.png";
 import HomeLatestArticalCard from "../../componnent/HomeLatestArticalCard";
+
+import ArticleOne from "../../../public/images/Blog/blogone.png";
+import Articlethree from "../../../public/images/Blog/blogthree.png";
+import Articletwo from "../../../public/images/Blog/blogtwo.png";
+import Articlefour from "../../../public/images/Blog/bottomfive.png";
+import Articlesix from "../../../public/images/Blog/bottomseven.png";
+import Articlefive from "../../../public/images/Blog/bottomsix.png";
 
 const Blog = () => {
     return (
@@ -16,9 +23,12 @@ const Blog = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row md:gap-8 mt-10 pb-14">
-                    <HomeLatestArticalCard />
-                    <HomeLatestArticalCard />
-                    <HomeLatestArticalCard />
+                    <HomeLatestArticalCard image={ArticleOne} tophead={'Marketing'} head={'Email Marketing for Business Owners: 5 Tips and Examples for Success'} min={'6 min'} />
+
+                    <HomeLatestArticalCard image={Articletwo} tophead={'UX Design'} head={'Enhancing User Experience: The Design Behind Seamless Interactions'} min={'8 min'} />
+
+                    <HomeLatestArticalCard image={Articlethree} tophead={'Video Marketing'} head={'The Benefits of Promotional Videos for Your Business'} min={'10 min'} />
+
                 </div>
             </Container>
             <div className="h-auto bg-white">
@@ -57,9 +67,13 @@ const Blog = () => {
 
             <Container>
                 <div className="flex flex-col md:flex-row md:gap-8 pt-8 mt-10">
-                    <HomeLatestArticalCard />
-                    <HomeLatestArticalCard />
-                    <HomeLatestArticalCard />
+
+                    <HomeLatestArticalCard image={Articlefour} tophead={'Graphic Design'} head={'Top 10 Graphic & Motion Design Marketing Benefits for Business Owners'} min={'10 min'} />
+
+                    <HomeLatestArticalCard image={Articlefive} tophead={'Branding'} head={'Branding Benefits Fueling Business Growth and Success '} min={'10 min'} />
+
+                    <HomeLatestArticalCard image={Articlesix} tophead={'Motion Design'} head={'The Secret Power of Advertising Slogans'} min={'9 min'} />
+
                 </div>
 
             </Container>

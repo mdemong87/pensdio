@@ -13,12 +13,12 @@ const Footer = () => {
                             <p className="text-xl text-gray-500">We&apos;re here to solve your problem!</p>
                             <h1 className="text-3xl md:text-5xl py-4 font-light sFont text-gray-600">pensdio21@gmail.com</h1>
                         </div>
-                        <div className="flex flex-col md:flex-row justify-between items-cetner gap-5 py-5">
+                        <div className="flex flex-col md:flex-row justify-between items-cetner gap-5 py-5 pFont">
                             <div className="w-full">
-                                <p className="text-xl font-semibold pt-3 text-gray-600">Your trusted partner for<br /> global design innovation <br />solutions</p>
+                                <p className="text-2xl pt-3 text-gray-600">Your trusted partner for<br /> global design innovation <br />solutions</p>
                             </div>
                             <div className="w-[60%]">
-                                <h3 className="font-semibold text-xl py-3 text-gray-600">Follow us</h3>
+                                <h3 className="text-2xl py-3 text-gray-600">Follow us</h3>
                                 <div className="flex flex-col gap-2">
                                     <div className="flex gap-4 items-center">
                                         <FaLinkedinIn className="text-lg text-gray-500" />
@@ -35,7 +35,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="w-[70%]">
-                                <h3 className="font-semibold text-xl text-gray-600 py-3">Resources</h3>
+                                <h3 className="text-2xl text-gray-600 py-3">Resources</h3>
                                 <ul className="text-gray-500">
                                     <li>Case studies</li>
                                     <li>Reports</li>
@@ -43,7 +43,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className="w-full">
-                                <h3 className="font-semibold text-xl py-3 text-gray-600">Digital Turbo Edition</h3>
+                                <h3 className="text-2xl py-3 text-gray-600">Digital Turbo Edition</h3>
                                 <p className="text-gray-500">Receive the latest updates and changes</p>
                                 <div className="mt-3 flex w-full">
                                     <div>

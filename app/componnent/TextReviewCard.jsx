@@ -1,9 +1,8 @@
 import Image from "next/image";
 import vactor1 from "../../public/Vector1.png";
 import vactor2 from "../../public/Vector2.png";
-import clientProfile from "../../public/clientProfile.png";
 
-const TextReviewCard = ({ dis }) => {
+const TextReviewCard = ({ dis, clientProfile, name, position }) => {
     return (
         <div className="bg-white rounded-sm w-full h-fit my-6">
             <div className="p-4">
@@ -21,8 +20,8 @@ const TextReviewCard = ({ dis }) => {
                         <Image className="h-14 w-14" src={clientProfile} alt="clientProfile" />
                     </div>
                     <div>
-                        <h3 className="text-gray-500 text-lg font-semibold">Laura Walker</h3>
-                        <span className="text-sm text-gray-400"> Web Designer, Aequor Healthcare</span>
+                        <h3 className="text-gray-500 text-lg font-semibold">{name}</h3>
+                        <span className="text-sm text-gray-400">{position}</span>
                     </div>
                 </div>
             </div>
