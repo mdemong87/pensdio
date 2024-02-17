@@ -13,7 +13,7 @@ const AboutLetsMeet = () => {
 
 
     return (
-        <div className="py-20 sBg">
+        <div className="pt-20 sBg pb-8 md:pb-0">
             <Container>
                 <div className="h-full">
                     <h1 className="text-4xl md:text-5xl font-bold sFont text-gray-700">Let&apos;s Meet With Our</h1>

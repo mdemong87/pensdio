@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 import logo from "../../public/logo.png";
 import logoOne from "../../public/logoOne.png";
 import Container from "./Container";
@@ -29,7 +30,10 @@ const Navber = () => {
                                 <Image className="w-36" src={logoOne} alt="Logo" />
                             )
                         }
-                        <FaBars onClick={() => setshowNav(!showNav)} className={`text-2xl cursor-pointer md:hidden ${pathName == "/" || pathName == "/about" ? "text-white" : "pCl"}`} />
+
+                        {
+                            showNav ? <RxCross2 onClick={() => setshowNav(!showNav)} className={`text-3xl cursor-pointer md:hidden ${pathName == "/" || pathName == "/about" ? "text-white" : "pCl"}`} /> : <FaBars onClick={() => setshowNav(!showNav)} className={`text-2xl cursor-pointer md:hidden ${pathName == "/" || pathName == "/about" ? "text-white" : "pCl"}`} />
+                        }
                     </div >
 
 

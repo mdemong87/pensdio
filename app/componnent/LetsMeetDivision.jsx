@@ -8,7 +8,7 @@ const LetsMeetSection = ({ itemData, index, length, photo }) => {
     const swiper = useSwiper();
 
     return (
-        <div className="m-8 flex flex-col">
+        <div className="mt-8 ml-8 mr-8 mb-8 md:mb-0 flex flex-col">
             <div>
                 <Image className="w-full" src={photo} alt="Team-profile-Photo" />
             </div>

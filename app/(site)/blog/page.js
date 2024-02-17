@@ -3,15 +3,15 @@ import Image from "next/image";
 import blogMotion from "../../../public/images/Blog/Blog Mid 04.png";
 import motionProfileblog from "../../../public/motionProfileblog.png";
 import HomeLatestArticalCard from "../../componnent/HomeLatestArticalCard";
+import getData from "./helper/getData";
 
-import ArticleOne from "../../../public/images/Blog/blogone.png";
-import Articlethree from "../../../public/images/Blog/blogthree.png";
-import Articletwo from "../../../public/images/Blog/blogtwo.png";
-import Articlefour from "../../../public/images/Blog/bottomfive.png";
-import Articlesix from "../../../public/images/Blog/bottomseven.png";
-import Articlefive from "../../../public/images/Blog/bottomsix.png";
 
-const Blog = () => {
+
+
+const Blog = async () => {
+
+    const blogdata = await getData();
+
     return (
         <div className="pt-36 pb-20 sBg">
             <Container>
@@ -22,12 +22,18 @@ const Blog = () => {
                     <p className="text-lg md:text-xl text-gray-500 md:w-2/4 pt-4">Latest publication featuring insights, trends, and valuable information for your reading pleasure and knowledge enrichment</p>
                 </div>
 
-                <div className="flex flex-col md:flex-row md:gap-8 mt-10 pb-14">
-                    <HomeLatestArticalCard image={ArticleOne} tophead={'Marketing'} head={'Email Marketing for Business Owners: 5 Tips and Examples for Success'} min={'6 min'} />
+                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 py-12 ">
 
-                    <HomeLatestArticalCard image={Articletwo} tophead={'UX Design'} head={'Enhancing User Experience: The Design Behind Seamless Interactions'} min={'8 min'} />
+                    {
+                        blogdata?.map((singleBlog, index) => {
+                            if (index <= 3) {
+                                return (
+                                    <HomeLatestArticalCard key={index} href={`/blog/${singleBlog?._id}`} image={singleBlog?.file.secure_url} tophead={singleBlog?.tag} head={singleBlog?.title} min={singleBlog?.time} />
+                                )
+                            }
+                        })
+                    }
 
-                    <HomeLatestArticalCard image={Articlethree} tophead={'Video Marketing'} head={'The Benefits of Promotional Videos for Your Business'} min={'10 min'} />
 
                 </div>
             </Container>
@@ -66,14 +72,28 @@ const Blog = () => {
             </div>
 
             <Container>
-                <div className="flex flex-col md:flex-row md:gap-8 pt-8 mt-10">
+                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 pt-8 mt-12">
+                    {
+                        blogdata?.map((singleBlog, index) => {
+                            if (index >= 4 && index <= 6) {
+                                return (
+                                    <HomeLatestArticalCard key={index} href={`/blog/${singleBlog?._id}`} image={singleBlog?.file.secure_url} tophead={singleBlog?.tag} head={singleBlog?.title} min={singleBlog?.time} />
+                                )
+                            }
+                        })
+                    }
+                </div>
 
-                    <HomeLatestArticalCard image={Articlefour} tophead={'Graphic Design'} head={'Top 10 Graphic & Motion Design Marketing Benefits for Business Owners'} min={'10 min'} />
-
-                    <HomeLatestArticalCard image={Articlefive} tophead={'Branding'} head={'Branding Benefits Fueling Business Growth and Success '} min={'10 min'} />
-
-                    <HomeLatestArticalCard image={Articlesix} tophead={'Motion Design'} head={'The Secret Power of Advertising Slogans'} min={'9 min'} />
-
+                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 pt-8 mt-12">
+                    {
+                        blogdata?.map((singleBlog, index) => {
+                            if (index >= 7) {
+                                return (
+                                    <HomeLatestArticalCard key={index} href={`/blog/${singleBlog?._id}`} image={singleBlog?.file.secure_url} tophead={singleBlog?.tag} head={singleBlog?.title} min={singleBlog?.time} />
+                                )
+                            }
+                        })
+                    }
                 </div>
 
             </Container>

@@ -14,10 +14,10 @@ const LatestWork = () => {
                 </div>
                 <div className="flex flex-col md:flex-row md:gap-8 mt-10">
                     <div className="w-full">
-                        <HomeLatestWork iamgeSrc={homelatestOne} topheadLeft={"Brand Identity"} topheadRight={"KANGARI STONES"} head={"Brand identity & Social media for Kangari"} dis={"Kangari Stones is a renounced tile company in USA"} />
+                        <HomeLatestWork href={"https://www.behance.net/gallery/25851945/Brand-identity-Social-media-for-Tiles-Company"} iamgeSrc={homelatestOne} topheadLeft={"Brand Identity"} topheadRight={"KANGARI STONES"} head={"Brand identity & Social media for Kangari"} dis={"Kangari Stones is a renounced tile company in USA"} />
                     </div>
                     <div className="w-full mt-16">
-                        <HomeLatestWork iamgeSrc={homelatestTwo} topheadLeft={"Case Study"} topheadRight={"DOCTRA APP"} head={"Doctra app Case Study"} dis={"Doctra is a health app where you can book doctors appointments"} />
+                        <HomeLatestWork href={"https://www.behance.net/gallery/116341623/Doctra-app-Case-Study"} iamgeSrc={homelatestTwo} topheadLeft={"Case Study"} topheadRight={"DOCTRA APP"} head={"Doctra app Case Study"} dis={"Doctra is a health app where you can book doctors appointments"} />
                     </div>
                 </div>
                 <div className="mt-10">

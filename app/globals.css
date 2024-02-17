@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primaryColor: #151FA1;
+  --primaryColor: #151fa1;
   --secondaryColor: #E8E9FA;
   --footerBg: #f2f3ff;
 
@@ -88,6 +88,4 @@ body {
   .sFont {
     font-family: var(--rakiby);
   }
-
-
 }

@@ -20,29 +20,30 @@ const Work = () => {
                 </div>
                 <div className="grid flex-col md:grid-cols-2 gap-8 mt-10">
 
-                    <HomeLatestWork iamgeSrc={workone} topheadLeft={"Brand Identity"} topheadRight={"KANGARI STONES"} head={"Brand identity & Social media for Kangari"} dis={"Kangari Stones is a renounced tile company in USA"} />
-                    <HomeLatestWork iamgeSrc={worktwo} topheadLeft={"Case Study"} topheadRight={"DOCTRA APP"} head={"Doctra app Case Study"} dis={"Doctra is a health app where you can book doctors appointments"} />
+                    <HomeLatestWork href={"https://www.behance.net/gallery/25851945/Brand-identity-Social-media-for-Tiles-Company"} iamgeSrc={workone} topheadLeft={"Brand Identity"} topheadRight={"KANGARI STONES"} head={"Brand identity & Social media for Kangari"} dis={"Kangari Stones is a renounced tile company in USA"} />
 
-                    <HomeLatestWork iamgeSrc={workthree} topheadLeft={"Case Study"} topheadRight={"50 CLASSICAL HOMEOPATHY TREATMENT"} head={"Homeopathy Treatment Case Study"} dis={"Utilize the homeopathy app to create a treatment plan"} />
+                    <HomeLatestWork href={"https://www.behance.net/gallery/116341623/Doctra-app-Case-Study"} iamgeSrc={worktwo} topheadLeft={"Case Study"} topheadRight={"DOCTRA APP"} head={"Doctra app Case Study"} dis={"Doctra is a health app where you can book doctors appointments"} />
 
-
-                    <HomeLatestWork iamgeSrc={workfour} topheadLeft={"Identity Design"} topheadRight={"AJA FIT"} head={"Brand Identity design for Aja Fit"} dis={"Aja Fit is a tech business working to improve global health"} />
+                    <HomeLatestWork href={"https://www.behance.net/gallery/186370787/Health-care-UXUI-Solution"} iamgeSrc={workthree} topheadLeft={"Case Study"} topheadRight={"50 CLASSICAL HOMEOPATHY TREATMENT"} head={"Homeopathy Treatment Case Study"} dis={"Utilize the homeopathy app to create a treatment plan"} />
 
 
-                    <HomeLatestWork iamgeSrc={worksix} topheadLeft={"Identity Design"} topheadRight={"SUBRA SYSTEM"} head={"Brand identity & Website for Subra System"} dis={"Subra System is a specialist provider of software solution"} />
+                    <HomeLatestWork href={"https://www.behance.net/gallery/122916329/Brand-Identitydesign-for-Aja-Fit-with-case-study"} iamgeSrc={workfour} topheadLeft={"Identity Design"} topheadRight={"AJA FIT"} head={"Brand Identity design for Aja Fit"} dis={"Aja Fit is a tech business working to improve global health"} />
 
 
-                    <HomeLatestWork iamgeSrc={workeight} topheadLeft={"UX & UI Design"} topheadRight={"APPTO"} head={"App Landing page Digital E-Wallet Company"} dis={"Appto is a easy fast & secure digital e-wallet"} />
+                    <HomeLatestWork href={"https://www.behance.net/gallery/134344685/Brand-identityWebsite-for-Software-Company"} iamgeSrc={worksix} topheadLeft={"Identity Design"} topheadRight={"SUBRA SYSTEM"} head={"Brand identity & Website for Subra System"} dis={"Subra System is a specialist provider of software solution"} />
 
 
-                    <HomeLatestWork iamgeSrc={workfive} topheadLeft={"Event Branding"} topheadRight={"BIT SUMMIT"} head={"International Event BIT Summit 2021"} dis={"Interventional Cardiologists for the Improvement Summit"} />
+                    <HomeLatestWork href={"https://www.behance.net/gallery/127836811/App-Landingpage-Digital-E-Wallet-Company"} iamgeSrc={workeight} topheadLeft={"UX & UI Design"} topheadRight={"APPTO"} head={"App Landing page Digital E-Wallet Company"} dis={"Appto is a easy fast & secure digital e-wallet"} />
 
 
-                    <HomeLatestWork iamgeSrc={workseven} topheadLeft={"UX & UI Design"} topheadRight={"EDUCARE"} head={"Education Dashboard UX & UI Design"} dis={"Educare is a leading educational technology SaaS solution"} />
+                    <HomeLatestWork href={"https://www.behance.net/gallery/24973021/InternationalMedical-Events-BIT-Summit-2021"} iamgeSrc={workfive} topheadLeft={"Event Branding"} topheadRight={"BIT SUMMIT"} head={"International Event BIT Summit 2021"} dis={"Interventional Cardiologists for the Improvement Summit"} />
+
+
+                    <HomeLatestWork href={"https://www.behance.net/gallery/186369971/CreativeEducation-Dashboard-UX-UIDesign-Solution"} iamgeSrc={workseven} topheadLeft={"UX & UI Design"} topheadRight={"EDUCARE"} head={"Education Dashboard UX & UI Design"} dis={"Educare is a leading educational technology SaaS solution"} />
 
                 </div>
                 <div className="mt-10">
-                    <Link className="border border-blue-900 py-3 px-5" href={"/work"}>View All Works</Link>
+                    <Link className="border border-blue-900 py-3 px-5" href={"https://www.behance.net/Pensdio"} target="blank" >View All Works</Link>
                 </div>
             </Container >
         </main >

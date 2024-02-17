@@ -1,6 +1,6 @@
 import Container from "@/app/componnent/Container";
 import Image from "next/image";
-import posterProfile from "../../../../public/images/ClientReview/leftthree.png";
+import posterProfile from "../../../../public/images/AboutUs/threetwo.png";
 import singleBlogImage from "../../../../public/images/singleBlog/blogone.png";
 
 const SingleBlog = () => {
@@ -10,8 +10,8 @@ const SingleBlog = () => {
                 <div className="py-14">
                     <h1 className="text-5xl font-semibold text-center text-gray-600 sFont">UI and UX Design: Crafting Engaging and User-centric Digital Experiences</h1>
                     <div className="flex justify-center items-center mt-8">
-                        <Image className="rounded-full p-3" src={posterProfile} alt="Poster-profile" />
-                        <h4 className="font-semibold text-xl text-gray-500">Md Emon Hossen</h4>
+                        <Image className="rounded-full w-20 p-3" src={posterProfile} alt="Poster-profile" />
+                        <h4 className="font-semibold text-xl text-gray-500">Ahmed Zia Chowdhury</h4>
                     </div>
 
                     <div className="w-full">
