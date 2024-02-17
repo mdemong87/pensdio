@@ -1,13 +1,20 @@
-import ConnectDB from "@/mongoDB/connectionDb";
-import BlogModel from "@/mongoDB/schemaAndmodel";
+import { revalidatePath } from "next/cache";
+
 
 async function getData() {
 
-
-    ConnectDB();
-
-    const finddata = await BlogModel.find({});
-    return finddata;
+    try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blog`, {
+            next: {
+                revalidate: 0,
+            },
+        });
+        const path = `${process.env.NEXT_PUBLIC_BASE_URL}/api/blog`;
+        revalidatePath(path)
+        return response.json();
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 
