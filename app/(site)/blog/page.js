@@ -12,7 +12,6 @@ const Blog = async () => {
 
     const response = await getData();
     const blogdata = response.data;
-    console.log(blogdata);
 
     return (
         <div className="pt-36 pb-20 sBg">
@@ -29,7 +28,6 @@ const Blog = async () => {
                     {
                         blogdata?.map((singleBlog, index) => {
                             if (index < 3) {
-                                console.log(index);
                                 return (
                                     <HomeLatestArticalCard key={index} href={`/blog/${singleBlog?._id}`} image={singleBlog?.file.secure_url} tophead={singleBlog?.tag} head={singleBlog?.title} min={singleBlog?.time} />
                                 )
@@ -79,7 +77,6 @@ const Blog = async () => {
                     {
                         blogdata?.map((singleBlog, index) => {
                             if (index >= 3 && index < 6) {
-
                                 return (
                                     <HomeLatestArticalCard key={index} href={`/blog/${singleBlog?._id}`} image={singleBlog?.file.secure_url} tophead={singleBlog?.tag} head={singleBlog?.title} min={singleBlog?.time} />
                                 )
