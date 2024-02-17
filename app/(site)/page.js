@@ -8,6 +8,9 @@ import getData from "./blog/helper/getData";
 
 
 
+
+export const revalidate = 10;
+
 export default async function Home() {
 
   const data = await getData();

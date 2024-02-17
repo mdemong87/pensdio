@@ -6,12 +6,17 @@ import HomeLatestArticalCard from "../../componnent/HomeLatestArticalCard";
 import getData from "./helper/getData";
 
 
+export const revalidate = 10;
+
 
 
 const Blog = async () => {
 
     const response = await getData();
     const blogdata = response.data;
+
+
+    console.log(blogdata.length);
 
     return (
         <div className="pt-36 pb-20 sBg">
@@ -85,7 +90,7 @@ const Blog = async () => {
                     }
                 </div>
 
-                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 pt-8 mt-5">
+                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 pt-8 mt-0">
                     {
                         blogdata?.map((singleBlog, index) => {
                             if (index >= 6) {
