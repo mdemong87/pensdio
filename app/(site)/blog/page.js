@@ -12,11 +12,10 @@ export const revalidate = 10;
 
 const Blog = async () => {
 
-    const response = await getData();
+    const response = await getData(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blog`);
     const blogdata = response.data;
 
 
-    console.log(blogdata.length);
 
     return (
         <div className="pt-36 pb-20 sBg">

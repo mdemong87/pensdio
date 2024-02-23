@@ -27,7 +27,7 @@ const HeroSlider = () => {
                 <div className="h-full w-full flex flex-col">
                     <div className="h-full flex-col-reverse flex flex-col md:flex-row md:items-center pt-12 md:pt-16">
                         <div className="w-full">
-                            <h1 className="text-center md:text-left text-4xl md:text-6xl text-white font-bold sFont tracking-wider">Make Brands That Are Human-Centered And Compelling.</h1>
+                            <h1 className="text-center md:text-left text-4xl md:text-6xl text-white font-bold sFont tracking-wider">Make Brands That Are Human-Centered And Compelling</h1>
 
                             <div className="mt-16 flex flex-col md:flex-row items-center  md:px-0">
                                 <div className="w-full md:w-fit flex justify-center md:justify-start md:border-r-2 md:pr-4 border-white">
@@ -43,7 +43,7 @@ const HeroSlider = () => {
                                                 <Image className="rounded-full w-16 md:w-24" src={motionProfileblog} alt="Blog-motion-profile" />
                                             </div>
                                         </div>
-                                        <Link className="underline text-gray-100 text-xl text-center w-full -translate-x-7" href={"/"}>Vedio review</Link>
+                                        <Link className="underline text-gray-100 text-xl text-center w-full -translate-x-7" href={"/review"}>Vedio review</Link>
                                     </div>
                                 </div>
                                 <div className="pl-4 pt-5 md:pt-0 text-center md:text-left">
@@ -64,7 +64,7 @@ const HeroSlider = () => {
 
 
 
-                            <video className="" autoPlay={false} muted loop controls={false}>
+                            <video className="" autoPlay={true} muted loop controls={false}>
                                 <source src='https://res.cloudinary.com/dyffuhups/video/upload/v1707923806/Sequence_01_k3mpdf.mp4' type="video/mp4" />
                             </video>
 

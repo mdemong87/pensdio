@@ -25,9 +25,13 @@ const Navber = () => {
                         {
                             pathName == "/" || pathName == "/about" ? (
 
-                                <Image className="w-32" src={logo} alt="Logo" />
+                                <Link href={"/"}>
+                                    <Image className="w-32" src={logo} alt="Logo" />
+                                </Link>
                             ) : (
-                                <Image className="w-36" src={logoOne} alt="Logo" />
+                                <Link href={"/"}>
+                                    <Image className="w-36" src={logoOne} alt="Logo" />
+                                </Link>
                             )
                         }
 

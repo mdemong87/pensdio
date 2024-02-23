@@ -1,8 +1,8 @@
 
-async function getData() {
+async function getData(url) {
 
     try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blog`);
+        const response = await fetch(url);
         return response.json();
     } catch (error) {
         console.log(error);

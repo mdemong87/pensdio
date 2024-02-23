@@ -39,14 +39,15 @@ export async function POST(request) {
 
     try {
 
-        const { tag, title, time, file, dis } = await request.json();
+        const { tag, title, time, file, bigFile, dis } = await request.json();
 
 
         const blogData = {
             tag,
             title,
             time,
-            file: await photoUpload(file,),
+            file: await photoUpload(file),
+            bigFile: await photoUpload(bigFile),
             dis
         }
 

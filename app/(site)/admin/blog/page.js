@@ -11,14 +11,29 @@ export default function Page() {
     const [file, setfile] = useState('');
     const [dis, setdis] = useState('');
     const [isloading, setisloading] = useState(false);
+    const [bigFile, setbigFile] = useState('');
 
 
     const handleFileChangle = (e) => {
         const file = e.target.files[0];
-        if (file.size < 200000) {
+        if (file.size < 300000) {
             const filereacder = new FileReader();
             filereacder.onload = (event) => {
                 setfile(event.target.result)
+            }
+            filereacder.readAsDataURL(file);
+        } else {
+            alert("File Size is too Large.Keep it is Less the 200 KB");
+        }
+
+    }
+
+    const handleBigFileChangle = (e) => {
+        const file = e.target.files[0];
+        if (file.size < 300000) {
+            const filereacder = new FileReader();
+            filereacder.onload = (event) => {
+                setbigFile(event.target.result)
             }
             filereacder.readAsDataURL(file);
         } else {
@@ -31,7 +46,7 @@ export default function Page() {
 
     const handlepostBlog = async () => {
 
-        if (tag != '' && title != '' && time != '' && file != '' && dis != '') {
+        if (tag != '' && title != '' && time != '' && file != '' && bigFile != '' && dis != '') {
 
             setisloading(true);
 
@@ -40,7 +55,7 @@ export default function Page() {
                 headers: {
                     "content-Type": "application/json",
                 },
-                body: JSON.stringify({ tag, title, time, file, dis })
+                body: JSON.stringify({ tag, title, time, file, bigFile, dis })
             });
             const resposns = await res.json();
             if (resposns.success) {
@@ -48,6 +63,7 @@ export default function Page() {
                 settitle('');
                 settime('');
                 setfile('');
+                setbigFile('');
                 setdis('');
             } else {
                 alert("Blog Post Failed");
@@ -68,10 +84,18 @@ export default function Page() {
                     {isloading ? <div>
                         <h1 className="text-2xl font-bold text-center pt-32">Loading...</h1>
                     </div> : <div className="flex flex-col mt-10">
+
                         <input onChange={(e) => { settag(e.target.value) }} className="border p-2 mb-5 text-lg broder-gray-500 rounded-md" type='text' value={tag} placeholder="Blog Tag" />
+
                         <input onChange={(e) => { settitle(e.target.value) }} className="border p-2 text-lg broder-gray-500 rounded-md" type='text' value={title} placeholder="Blog Title" />
+
                         <input onChange={(e) => { settime(e.target.value) }} className="border my-5 p-2 text-lg broder-gray-500 rounded-md" type='text' value={time} placeholder="Reading Time" />
-                        <input onChange={(e) => { handleFileChangle(e) }} className="border mb-5 p-2 text-lg broder-gray-500 rounded-md" type='file' placeholder="Blog Title" />
+
+                        <input onChange={(e) => { handleFileChangle(e) }} className="border mb-5 p-2 text-lg broder-gray-500 rounded-md" type='file' placeholder="Blog Themnail" />
+
+                        <input onChange={(e) => { handleBigFileChangle(e) }} className="border mb-5 p-2 text-lg broder-gray-500 rounded-md" type='file' placeholder="Blog Themnail Big" />
+
+
                         <textarea onChange={(e) => { setdis(e.target.value) }} className="border p-2 text-lg broder-gray-500 rounded-md  h-60" value={dis} placeholder="Blog Discription"></textarea>
 
 

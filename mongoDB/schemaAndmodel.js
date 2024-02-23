@@ -9,6 +9,7 @@ const BlogSchema = new Schema({
     title: String,
     time: String,
     file: Object,
+    bigFile: Object,
     dis: String,
     createdAt: { type: Date, default: Date.now() }
 })
