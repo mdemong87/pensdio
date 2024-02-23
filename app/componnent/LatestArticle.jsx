@@ -27,7 +27,7 @@ const LatestArticle = async () => {
                             if (index < 3) {
 
                                 return (
-                                    <HomeLatestArticalCard href={`/blog/${item?._id}`} image={item?.file?.secure_url} tophead={item?.tag} head={item?.title} min={item?.time} />
+                                    <HomeLatestArticalCard key={index} href={`/blog/${item?._id}`} image={item?.file?.secure_url} tophead={item?.tag} head={item?.title} min={item?.time} />
                                 )
                             }
                         })
