@@ -26,8 +26,7 @@ body {
 }
 
 .transformingBg {
-  background: linear-gradient(rgba(0, 0, 0, 0.182), rgba(0, 0, 0, 0.182)), url('../public/transformingbackgoround.png');
-  background-position: center;
+  background: url('../public/transformingbackgoround.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
@@ -54,6 +53,12 @@ body {
     height: 100%;
   }
 
+}
+
+@media (max-width:758px) {
+  .transformingBg {
+    background-position: center;
+  }
 }
 
 @layer utilities {

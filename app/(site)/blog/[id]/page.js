@@ -20,15 +20,15 @@ const SingleBlog = () => {
     const [singleData, setsingleData] = useState({});
 
 
-    async function fetchData() {
+    async function fetchData(id) {
         setisloading(true);
-        const singleBlogData = await getData(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blog/${finalPath}`);
+        const singleBlogData = await getData(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blog/${id}`);
         setsingleData(singleBlogData);
         setisloading(false);
     }
 
     useEffect(() => {
-        fetchData();
+        fetchData(finalPath);
     }, [finalPath])
 
     const discription = singleData?.data?.dis;
@@ -38,7 +38,7 @@ const SingleBlog = () => {
         <div className="sBg pt-24">
             <Container>
                 <div className="py-14">
-                    <h1 className="text-5xl font-semibold text-center text-gray-600 sFont">{
+                    <h1 className="text-3xl md:text-5xl font-semibold text-center text-gray-600 sFont">{
                         isloading ? "Loading..." : singleData?.data?.title
                     }</h1>
                     <div className="flex justify-center items-center mt-8">
