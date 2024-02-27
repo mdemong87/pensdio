@@ -84,10 +84,10 @@ const Contact = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 pt-20">
                             <div className="w-full px-4 py-5">
                                 <h1 className="text-4xl w-full md:text-5xl font-bold sFont text-gray-600">Need Experts?</h1>
-                                <h1 className="text-4xl w-full md:text-5xl font-bold sFont text-gray-600">We're here to</h1>
+                                <h1 className="text-4xl w-full md:text-5xl font-bold sFont text-gray-600">We&apos;re here to</h1>
                                 <h1 className="text-4xl w-full md:text-5xl font-bold sFont text-gray-600">Assist</h1>
                                 <p className="text-xl pFont text-gray-500 pt-8">
-                                    Skilled team ready to assist. Let's discuss your needs and craft a tailored solution together
+                                    Skilled team ready to assist. Let&apos;s discuss your needs and craft a tailored solution together
                                 </p>
                             </div>
                             <div className="w-full bg-gray-50 px-4 py-5 rounded-md">
