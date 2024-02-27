@@ -13,7 +13,7 @@ const LatestArticle = async () => {
 
 
     return (
-        <div className="h-auto pt-8 pb-20 sBg">
+        <div className="h-auto py-28 sBg">
             <Container>
                 <div className="h-full">
                     <h1 className="text-4xl md:text-5xl font-bold sFont text-gray-700">Our Latest</h1>

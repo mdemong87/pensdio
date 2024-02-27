@@ -24,11 +24,11 @@ const AboutLetsMeet = () => {
                         <ul className="mt-12">
                             <li onClick={() => { setcounter(0) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 0 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.01/</span>
-                                <h2 className="text-2xl md:text-3xl">Software engineer</h2>
+                                <h2 className="text-2xl md:text-3xl">Web Developer</h2>
                             </li>
                             <li onClick={() => { setcounter(1) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 1 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.02/</span>
-                                <h2 className="text-2xl md:text-3xl">Brand strategy director</h2>
+                                <h2 className="text-2xl md:text-3xl">Brand strategist</h2>
                             </li>
                             <li onClick={() => { setcounter(2) }} className={`w-full border-b-2 border-gray-300 px-6 py-4 rounded-md text-2xl flex items-center gap-5 cursor-pointer ${counter == 2 ? "text-gray-600 font-semibold" : "text-gray-400"}`}>
                                 <span className="text-sm md:text-lg">.03/</span>

@@ -3,11 +3,15 @@ import Link from "next/link";
 import workone from "../../../public/images/Home/workone.png";
 import worktwo from "../../../public/images/Home/worktwo.png";
 import workeight from "../../../public/images/Works/workeight.png";
+import workele from "../../../public/images/Works/workele.png";
 import workfive from "../../../public/images/Works/workfive.png";
 import workfour from "../../../public/images/Works/workfour.png";
+import worknine from "../../../public/images/Works/worknine.png";
 import workseven from "../../../public/images/Works/workseven.png";
 import worksix from "../../../public/images/Works/worksix.png";
+import workten from "../../../public/images/Works/workten.png";
 import workthree from "../../../public/images/Works/workthree.png";
+import worktwle from "../../../public/images/Works/worktwle.png";
 import HomeLatestWork from "../../componnent/HomeLatestWorkCard";
 
 const Work = () => {
@@ -40,6 +44,28 @@ const Work = () => {
 
 
                     <HomeLatestWork href={"https://www.behance.net/gallery/186369971/CreativeEducation-Dashboard-UX-UIDesign-Solution"} iamgeSrc={workseven} topheadLeft={"UX & UI Design"} topheadRight={"EDUCARE"} head={"Education Dashboard UX & UI Design"} dis={"Educare is a leading educational technology SaaS solution"} />
+
+
+
+
+
+
+
+                    <HomeLatestWork href={"https://www.mamir-home.de/"} iamgeSrc={worknine} topheadLeft={"E-Commence Website"} topheadRight={"Mamir Home"} head={"E-Commerce Website for Handmade Product"} dis={"We look forward to making you and your loved ones happy"} />
+
+
+
+                    <HomeLatestWork href={"https://loustauabogados.com/"} iamgeSrc={workten} topheadLeft={"Portfolio Website"} topheadRight={"LOUSTAU"} head={"Loustau Law Firm Website"} dis={"Professional law practice that handles legal demands quickly"} />
+
+
+                    <HomeLatestWork href={"https://cmshs.edu.bd/"} iamgeSrc={workele} topheadLeft={"LMS Website"} topheadRight={"CMSHS"} head={"Education Dashboard UX & UI Design"} dis={"Educare is a leading educational technology SaaS solution"} />
+
+
+                    <HomeLatestWork href={"https://www.nanosoft.uk/"} iamgeSrc={worktwle} topheadLeft={"Software Service Website"} topheadRight={"NANOSOFT"} head={"Nanosoft Tech delivers innovative software solution"} dis={"Exceptional customer service for your tech business"} />
+
+
+
+
 
                 </div>
                 <div className="mt-10">

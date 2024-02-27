@@ -23,7 +23,7 @@ export default function Page() {
             }
             filereacder.readAsDataURL(file);
         } else {
-            alert("File Size is too Large.Keep it is Less the 200 KB");
+            alert("File Size is too Large.Keep it is Less the 300 KB");
         }
 
     }
@@ -37,23 +37,19 @@ export default function Page() {
             }
             filereacder.readAsDataURL(file);
         } else {
-            alert("File Size is too Large.Keep it is Less the 200 KB");
+            alert("File Size is too Large.Keep it is Less the 300 KB");
         }
 
     }
 
-
-
-    const handlepostBlog = async () => {
-
-        if (tag != '' && title != '' && time != '' && file != '' && bigFile != '' && dis != '') {
-
+    const handlepostBlog = async (tag, title, time, file, bigFile, dis) => {
+        if (tag !== '' && title !== '' && time !== '' && file !== '' && bigFile !== '' && dis !== '') {
             setisloading(true);
 
             const res = await fetch("/api/blog", {
                 method: "POST",
                 headers: {
-                    "content-Type": "application/json",
+                    "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ tag, title, time, file, bigFile, dis })
             });
@@ -70,10 +66,10 @@ export default function Page() {
             }
             setisloading(false);
         } else {
-            alert("Please!Fill all flied");
+            alert("Please fill all fields");
         }
-
     }
+
 
     return (
         <div className="py-20">
@@ -99,7 +95,7 @@ export default function Page() {
                         <textarea onChange={(e) => { setdis(e.target.value) }} className="border p-2 text-lg broder-gray-500 rounded-md  h-60" value={dis} placeholder="Blog Discription"></textarea>
 
 
-                        <button onClick={() => handlepostBlog()} className="pBg p-2 text-white cursor-pointer font-semibold text-xl rounded-md mt-10">Post a Blog</button>
+                        <button onClick={() => handlepostBlog(tag, title, time, file, bigFile, dis)} className="pBg p-2 text-white cursor-pointer font-semibold text-xl rounded-md mt-10">Post a Blog</button>
                     </div>
                     }
 

@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import aboutHero from "../../public/aboutHero.png";
 import Container from "./Container";
 
 const AboutHero = () => {
@@ -14,9 +12,6 @@ const AboutHero = () => {
                         <Link href={'/contact'}>
                             <button className="bg-white font-semibold text-gray-600 px-4 py-2 rounded-sm">Let&apos;s Talk Us</button>
                         </Link>
-                    </div>
-                    <div className="w-1/4 hidden md:block h-full z-10">
-                        <Image width={450} className="absolute h-3/4 right-0 top-0" src={aboutHero} alt="About-Hero-iamge" />
                     </div>
                 </div>
             </Container>

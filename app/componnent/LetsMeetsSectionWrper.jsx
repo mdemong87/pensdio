@@ -30,11 +30,11 @@ const LetsMeetSectionWrper = ({ counter }) => {
         }, {
             photo: [three],
         }, {
-            photo: [threeOne, threetwo],
+            photo: [threetwo, threeOne],
         }, {
             photo: [fourone],
         }, {
-            photo: [fiveone, fivetwo],
+            photo: [fivetwo, fiveone],
         }, {
             photo: [sixone, sixtwo],
         }

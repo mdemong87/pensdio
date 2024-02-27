@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { FaPlay, FaStar } from "react-icons/fa";
 
-const VedioReviewCard = ({ VedioReviewImage, point, name, position }) => {
+const VedioReviewCard = ({ VedioReviewImage, point, name, position, setcontroler, controlValue, setisShow }) => {
     return (
-        <div className="bg-white w-full rounded-sm">
+        <div onClick={() => { setcontroler(controlValue), setisShow(true) }} className="bg-white w-full rounded-sm">
             <div className="relative w-full">
                 <Image className="w-full" src={VedioReviewImage} alt="VedioReviewImage" />
                 <div className="absolute top-0 h-full flex items-center w-full justify-center">

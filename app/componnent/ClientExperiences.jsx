@@ -4,7 +4,7 @@ import Container from "./Container";
 
 const ClientExperiences = () => {
     return (
-        <section className="h-auto py-20">
+        <section className="h-auto py-28">
             <Container>
                 <div className="h-full flex justify-between ">
                     <div className="h-full">

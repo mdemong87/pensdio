@@ -29,15 +29,15 @@
         "teamName": "Digital social marketer",
         "teamMember": [
             {
-                "name": "Mohaiminul Noqib",
-                "position": "Digital Marketer",
-                "expericence": "4",
-                "photo": "../images/1.png"
-            },
-            {
                 "name": "Ahmed Zia Chowdhury",
                 "position": "Content Writer",
                 "expericence": "9",
+                "photo": "../images/1.png"
+            },
+            {
+                "name": "Mohaiminul Noqib",
+                "position": "Digital Marketer",
+                "expericence": "4",
                 "photo": "../images/1.png"
             }
         ]
@@ -57,15 +57,15 @@
         "teamName": "Motion designer",
         "teamMember": [
             {
-                "name": "Nihal Kazi",
-                "position": "Motion Designer",
-                "expericence": "4",
-                "photo": "../images/1.png"
-            },
-            {
                 "name": "MSI Opu",
                 "position": "3D Designer",
                 "expericence": "5",
+                "photo": "../images/1.png"
+            },
+            {
+                "name": "Nihal Kazi",
+                "position": "Motion Designer",
+                "expericence": "4",
                 "photo": "../images/1.png"
             }
         ]

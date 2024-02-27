@@ -1,7 +1,4 @@
 import Container from "@/app/componnent/Container";
-import Image from "next/image";
-import blogMotion from "../../../public/images/Blog/Blog Mid 04.png";
-import motionProfileblog from "../../../public/motionProfileblog.png";
 import HomeLatestArticalCard from "../../componnent/HomeLatestArticalCard";
 import getData from "./helper/getData";
 
@@ -27,7 +24,7 @@ const Blog = async () => {
                     <p className="text-lg md:text-xl text-gray-500 md:w-2/4 pt-4">Latest publication featuring insights, trends, and valuable information for your reading pleasure and knowledge enrichment</p>
                 </div>
 
-                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 py-12 ">
+                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 pt-12 pb-7 ">
 
                     {
                         blogdata?.map((singleBlog, index) => {
@@ -42,7 +39,7 @@ const Blog = async () => {
 
                 </div>
             </Container>
-            <div className="h-auto bg-white">
+            {/* <div className="h-auto bg-white">
                 <Container>
                     <div className="flex flex-col gap-4 md:gap-0 md:flex-row py-10">
                         <div className="w-full">
@@ -74,10 +71,10 @@ const Blog = async () => {
                         </div>
                     </div>
                 </Container>
-            </div>
+            </div> */}
 
             <Container>
-                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 pt-8 mt-12">
+                <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 pt-0">
                     {
                         blogdata?.map((singleBlog, index) => {
                             if (index >= 3 && index < 6) {
