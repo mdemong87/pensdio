@@ -39,7 +39,7 @@ const PriceingCard = ({ featured, servise, tag, price }) => {
                     </ul>
                 </div>
 
-                <Link href={"#para"} className="flex items-center justify-between mt-5 border-2 border-gray-500 py-2 px-4 rounded-md cursor-pointer">
+                <Link target="_blank" href={"https://calendly.com/pensdio21/30min"} className="flex items-center justify-between mt-5 border-2 border-gray-500 py-2 px-4 rounded-md cursor-pointer">
                     <h4 className="">Book a Meeting</h4>
                     <FaArrowRightLong />
                 </Link>

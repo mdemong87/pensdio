@@ -10,7 +10,7 @@ const Contact = () => {
                         <h1 className="text-4xl w-full lg:w-[70%] md:text-5xl font-bold sFont text-gray-600">Choose the best plan and enjoy it with our support</h1>
                     </div>
 
-                    <section className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 pt-14 mt-0">
+                    <section className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 pt-14 mt-0">
 
 
                         <PriceingCard featured={[
@@ -80,7 +80,7 @@ const Contact = () => {
 
                     </section>
 
-                    <section id="para">
+                    <section>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 pt-20">
                             <div className="w-full px-4 py-5">
                                 <h1 className="text-4xl w-full md:text-5xl font-bold sFont text-gray-600">Need Experts?</h1>

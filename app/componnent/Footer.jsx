@@ -23,7 +23,7 @@ const Footer = () => {
                                         <span>+880 1911095079</span>
                                     </Link>
                                     <Link href={"https://maps.app.goo.gl/m5Ftu2s35fh5fvY58"} target="blank" className="flex items-start gap-2 mt-3">
-                                        <FaLocationPin className="text-4xl" />
+                                        <FaLocationPin className="text-2xl md:text-4xl" />
                                         <span>
                                             House 126, Road 05, Journalist Area, Mirpur -12, Dhaka -1216, Bangladesh
                                         </span>
@@ -37,7 +37,7 @@ const Footer = () => {
                                         <Link target="blank" href={"https://www.linkedin.com/company/pensdio/?viewAsMember=true"}>
                                             <FaLinkedinIn className="text-lg text-gray-500" />
                                         </Link>
-                                        <Link target="blank" href={"https://www.facebook.com/profile.php?id=100001995316541"}>
+                                        <Link target="blank" href={"https://www.facebook.com/Pensdio/"}>
                                             <FaFacebookF className="text-lg text-gray-500" />
                                         </Link>
                                         <Link target="blank" href={"https://www.instagram.com/pensdio21/"}>
