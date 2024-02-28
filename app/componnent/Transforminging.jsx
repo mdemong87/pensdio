@@ -29,12 +29,12 @@ const Transforming = () => {
 
             {
                 isShow && <div className="absolute top-0 w-full h-full p-5 md:p-20">
-                    <div className="bg-red-900 h-full rounded-lg">
+                    <div className="h-full rounded-lg">
                         <div onClick={() => setisShow(false)} className="absolute top-5 right-5 md:top-20 md:right-20 pBg p-2 rounded-full rounded-lg cursor-pointer z-10">
                             <RxCross1 className="text-xl text-white" />
                         </div>
                         <div className="h-full z-1">
-                            <video className="w-full h-full rounded-lg object-cover" controls={true} autoPlay={true}>
+                            <video className="w-full h-full rounded-lg" controls={true} autoPlay={true}>
                                 <source src={"https://res.cloudinary.com/dyffuhups/video/upload/v1709110461/Main_Comp_1_edjxzx.mp4"} type="video/mp4" />
                             </video>
                         </div>
